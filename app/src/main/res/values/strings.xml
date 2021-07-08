@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CurrencyConverter</string>
+    <string name="ruble">RUB</string>
+    <string name="dollar">USD</string>
+    <string name="euro">EUR</string>
+    <string name="pound">GBP</string>
+    <string name="frank">CHF</string>
+    <string name="yuan">CNY</string>
+    <string name="howNeedConverting">Сколько нужно конвертировать</string>
+    <string name="totalConverted">Итог</string>
 </resources>
