@@ -8,4 +8,5 @@
     <string name="yuan">CNY</string>
     <string name="howNeedConverting">Сколько нужно конвертировать</string>
     <string name="totalConverted">Итог</string>
+    <string name="cross"></string>
 </resources>
