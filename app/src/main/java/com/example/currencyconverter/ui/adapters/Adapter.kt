@@ -1,24 +1,24 @@
-package com.example.currencyconverter.adapters
+package com.example.currencyconverter.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.currencyconverter.R
 import com.example.currencyconverter.databinding.CurrencyItemBinding
-import com.example.currencyconverter.models.Currency
+import com.example.currencyconverter.data.models.Currency
 
 class Adapter : RecyclerView.Adapter<Adapter.ViewHolder>() {
 
     var elements: List<Currency> = listOf()
         set(value) {
-            field  = value
+            field = value
             notifyDataSetChanged()
         }
     private var selectedElement = -1
     val holders: ArrayList<ViewHolder> by lazy { ArrayList(itemCount) }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Adapter.ViewHolder {
-        val binder = CurrencyItemBinding.inflate(LayoutInflater.from(parent.context), parent,false)
+        val binder = CurrencyItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         val holder = ViewHolder(binder)
         holders.add(holder)
         return holder

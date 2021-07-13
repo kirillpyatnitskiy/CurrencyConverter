@@ -1,9 +1,9 @@
-package com.example.currencyconverter
+package com.example.currencyconverter.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.currencyconverter.adapters.Adapter
+import com.example.currencyconverter.ui.adapters.Adapter
 import com.example.currencyconverter.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         initView()
     }
 
-    private fun initView(){
+    private fun initView() {
         val fromAdapter = Adapter()
         val fromRecyclerView = binding.fromRV
         fromAdapter.elements = viewModel.listCurrency

@@ -1,4 +1,4 @@
-package com.example.currencyconverter.models
+package com.example.currencyconverter.data.models
 
 enum class Currency(name: String) {
     RUB("RUB"),
