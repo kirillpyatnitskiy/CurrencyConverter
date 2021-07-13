@@ -11,5 +11,6 @@
         android:text="@string/ruble"
         android:textSize="20sp"
         android:gravity="center"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:padding="3dp" />
 </FrameLayout>
