@@ -23,6 +23,7 @@ import com.example.currencyconverter.data.repository.db.entities.UsdEntity
     version = 1
 )
 abstract class DataBase: RoomDatabase() {
+
     abstract fun daoModel(): DaoModel
 
     companion object {
@@ -46,5 +47,9 @@ abstract class DataBase: RoomDatabase() {
             }
             return INSTANCE
         }
+    }
+
+    fun initMock() {
+
     }
 }
